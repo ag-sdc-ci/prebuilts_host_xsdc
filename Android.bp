@@ -1,0 +1,24 @@
+package {
+    default_applicable_licenses: ["prebuilts_host_xsdc_license"],
+}
+
+license {
+    name: "prebuilts_host_xsdc_license",
+    visibility: [":__subpackages__"],
+    license_kinds: [
+        "SPDX-license-identifier-Apache-2.0",
+    ],
+    license_text: [
+        "LICENSE",
+    ],
+}
+
+sh_binary_host {
+    name: "xsdc",
+    src: "bin/xsdc",
+}
+
+java_import_host {
+    name: "xsdc-jar",
+    jars: ["share/xsdc.jar"],
+}

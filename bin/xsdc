@@ -1,0 +1,3 @@
+#!/bin/sh
+BIN_DIR=$(cd "$(dirname "$0")" && pwd)
+exec java -jar "${BIN_DIR}/../share/xsdc.jar" "$@"
