@@ -2,5 +2,5 @@ shadow prebuilt repo: xsdc (host)
   upstream: https://android.googlesource.com/platform/system/tools/xsdc
   branch: universal
   source-baseline: 17.0.0 (main)
-  binaries: xsdc, xsdc.jar
-  date: 2026-10-25
+  deliverables: bin/xsdc, share/xsdc.jar, libxsdc-utils
+  date: 2026-10-26

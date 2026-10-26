@@ -22,3 +22,11 @@ java_import_host {
     name: "xsdc-jar",
     jars: ["share/xsdc.jar"],
 }
+
+cc_library_headers {
+    name: "libxsdc-utils",
+    export_include_dirs: ["include"],
+    host_supported: true,
+    vendor_available: true,
+}
+
