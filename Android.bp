@@ -13,14 +13,15 @@ license {
     ],
 }
 
-sh_binary_host {
-    name: "xsdc",
-    src: "bin/xsdc",
-}
-
 java_import_host {
     name: "xsdc-jar",
     jars: ["share/xsdc.jar"],
+}
+
+java_binary_host {
+    name: "xsdc",
+    static_libs: ["xsdc-jar"],
+    main_class: "com.android.xsdc.Main",
 }
 
 cc_library_headers {
